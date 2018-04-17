@@ -1,5 +1,19 @@
 # WindRes
-A tool to create an offshore wind DB from satellite datasets, and to undertake a wind resource assessment for small areas from the created DB and/or other sources
+A tool to create an offshore wind DB from satellite datasets, and to undertake a wind resource assessment for small areas from the created DB and/or other sources.
+
+
+# The project
+
+The research, which is contained in this thesis, was initiated with a one-year project, WindRes. This project was aimed at defining a programme of work for translating previous basic EU FP7 funded research into a commercial operational tool for satellite-enabled offshore wind resource optimization. The fundamental methodology that was to be employed had been developed and verified under the EU FP7 project NORSEWInD. The key challenges to developing commercial exploitation of this satellite-enabled technology were identified as:
+
+- Translate NORSEWInD research into commercial, operational tools.
+
+- Develop key applications for offshore wind and demonstrate impact.
+
+- Demonstrate opportunities offered by satellite services in the Energy sector.
+
+The software here available, as well as the user guide, are the results of research undertaken by author in the fulfillment of the requirements for the degree of PhD.
+
 
 # Prerequisites
 
@@ -17,11 +31,11 @@ A tool to create an offshore wind DB from satellite datasets, and to undertake a
       - windrose    
       - matplotlib
       - basemap
-      
+
       
 # Installation
 
-  MySQl installation
+  ## MySQl installation
   
 There are two ways of installing MySQL and MySQL Workbench. The first is the use of the Ubuntu software center. The second is the directly from the command prompt. The first option is really straightforward, thus only the second way will be explained.
 Open the command prompt and type the following steps:
@@ -51,7 +65,7 @@ The password for user “root” will be asked. In the previous command, -u root
 
 As step 3, the password for user “root” will be asked.
   
-  Python 2.7
+  ## Python 2.7 Installation
   
 1.	Refresh repositories.
 
@@ -65,7 +79,7 @@ As step 3, the password for user “root” will be asked.
 
 	$	sudo apt-get install python2.7 python-pip
 
-  Python packages
+  ## Python packages
   
 There are two ways of installation, through pip or from the command line. It is recommended to install all packages via command line. Furthermore, some packages may need the installation of other python packages. These will be installed automatically after the user agreement. Some others may need the previous installation of Linux libraries. In these cases, instructions of installation are indicated in PiPY repository.
 
@@ -77,7 +91,7 @@ There are two ways of installation, through pip or from the command line. It is 
 
 	$	sudo pip install package_name
 
-  MySQL change of directory
+  ## MySQL change of directory
   
 The DB size will be large, an important space is needed plus more space for the downloaded satellite datasets and csv files created prior to insertion into DB. Hence, installing an extra hard drive to the computer hosting the DB would be recommended. Thus, operating system and DB would be located in different hard drives. Once the large hard drive is installed and set to initiate when the computer turns on, the data directory can be changed. In the next steps, path2 will refer to the new directory.
 
@@ -152,3 +166,7 @@ In order to solve this issue every time the computer is initiated the steps 1, 1
 # Author
 
   Alberto S. Rabaneda
+  
+# Acknowledgements
+
+The project was possible due to support and advice from the University of Strathclyde, the Satellite Applications Catapult, Oldbaum Services, and the Offshore Renewable Energy Catapult.   
