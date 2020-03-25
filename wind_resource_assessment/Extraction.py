@@ -20,7 +20,7 @@ class FromDB:
     
     def connect(self):
         
-        db=MySQLdb.connect(host="localhost",user="root",passwd="LA_0selva",db="oceanwinds2")
+        db=MySQLdb.connect(host="localhost",user="root",passwd="######",db="######")
         cursor=db.cursor()
         return (db, cursor)
         
